@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Photo Shoot Details</title>
+</head>
+<body>
+    <h1>Baby Photo Shoot Details</h1>
+    <form method="get" action="Thanks.html">
+        <!-- Parent Information -->
+        <h2>Parent Information</h2>
+        <label for="father-first-name">Father's First Name:</label>
+        <input type="text" id="father-first-name" name="father-first-name" required><br><br>
+
+        <label for="father-last-name">Father's Last Name:</label>
+        <input type="text" id="father-last-name" name="father-last-name" required><br><br>
+
+        <label for="mother-first-name">Mother's First Name:</label>
+        <input type="text" id="mother-first-name" name="mother-first-name" required><br><br>
+
+        <label for="mother-last-name">Mother's Last Name:</label>
+        <input type="text" id="mother-last-name" name="mother-last-name" required><br><br>
+
+        <!-- Baby Information -->
+        <h2>Baby Information</h2>
+        <label for="baby-first-name">Baby's First Name:</label>
+        <input type="text" id="baby-first-name" name="baby-first-name" required><br><br>
+
+        <label for="baby-last-name">Baby's Last Name:</label>
+        <input type="text" id="baby-last-name" name="baby-last-name" required><br><br>
+
+        <label for="baby-age-years">Baby's Age (Years):</label>
+        <input type="number" id="baby-age-years" name="baby-age-years" min="0" max="5" required><br><br>
+
+        <label for="baby-age-months">Baby's Age (Months):</label>
+        <input type="number" id="baby-age-months" name="baby-age-months" min="0" max="11" required><br><br>
+
+        <label for="baby-age-days">Baby's Age (Days):</label>
+        <input type="number" id="baby-age-days" name="baby-age-days" min="0" max="30" required><br><br>
+
+        <!-- Contact Information -->
+        <h2>Contact Information</h2>
+        <label for="mobile-number">Mobile Number:</label>
+        <input type="tel" id="mobile-number" name="mobile-number" pattern="[0-9]{10}" required><br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Event Details -->
+        <h2>Event Details</h2>
+        <label for="event-date">Event Date:</label>
+        <input type="date" id="event-date" name="event-date" required><br><br>
+
+        <label for="event-timing">Event Timing:</label>
+        <input type="time" id="event-timing" name="event-timing" required><br><br>
+
+        <label for="event-address">Event Address:</label>
+        <textarea id="event-address" name="event-address" rows="4" cols="50" required></textarea><br><br>
+
+        <!-- Pricing and Payment -->
+        <h2>Pricing and Payment</h2>
+        <label>Price Category:</label>
+        <input type="radio" id="low-price" name="price-category" value="Low" required>
+        <label for="low-price">Low</label>
+
+        <input type="radio" id="average-price" name="price-category" value="Average" required>
+        <label for="average-price">Average</label>
+
+        <input type="radio" id="high-price" name="price-category" value="High" required>
+        <label for="high-price">High</label><br><br>
+
+        <label>Payment Method:</label>
+        <input type="radio" id="cash-payment" name="payment-method" value="Cash" required>
+        <label for="cash-payment">Cash On Delivery</label>
+
+        <input type="radio" id="online-payment" name="payment-method" value="Online" required>
+        <label for="online-payment">Online Payment</label><br><br>
+
+        <div id="online-payment-options"">
+            <label>Select Online Payment Method:</label>
+            <select id="payment-method-options" name="payment-method-options">
+                <option value="UPI">UPI</option>
+                <option value="PhonePe">PhonePe</option>
+                <option value="GPay">Google Pay (GPay)</option>
+                <option value="Paytm">Paytm</option>
+            </select><br><br>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html

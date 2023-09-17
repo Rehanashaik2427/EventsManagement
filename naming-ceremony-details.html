@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naming Ceremony Registration</title>
+</head>
+<body>
+    <h1>Naming Ceremony Registration</h1>
+    <form id="naming-ceremony-form" method="get" action="Thanks.html">
+        <label for="mother-name">Mother's Name:</label>
+        <input type="text" id="mother-name" name="mother-name" required><br><br>
+
+        <label for="father-name">Father's Name:</label>
+        <input type="text" id="father-name" name="father-name" required><br><br>
+
+        <label for="baby-name">Baby's Name:</label>
+        <input type="text" id="baby-name" name="baby-name" required><br><br>
+
+        <label for="mobile-number">Mobile Number:</label>
+        <input type="tel" id="mobile-number" name="mobile-number" required pattern="[0-9]{10}"><br><br>
+
+        <label for="event-date">Event Date:</label>
+        <input type="date" id="event-date" name="event-date" required><br><br>
+
+        <label for="event-timing">Event Timing:</label>
+        <input type="time" id="event-timing" name="event-timing" required><br><br>
+
+        <label>Price Category:</label>
+        <input type="radio" id="low-price" name="price-category" value="Low" required>
+        <label for="low-price">Low</label>
+
+        <input type="radio" id="average-price" name="price-category" value="Average" required>
+        <label for="average-price">Average</label>
+
+        <input type="radio" id="high-price" name="price-category" value="High" required>
+        <label for="high-price">High</label><br><br>
+
+        <label>Payment Method:</label>
+        <input type="radio" id="cash-payment" name="payment-method" value="Cash" required>
+        <label for="cash-payment">Cash On Delivery</label>
+
+        <input type="radio" id="online-payment" name="payment-method" value="Online" required>
+        <label for="online-payment">Online Payment</label><br><br>
+
+        <div id="online-payment-options" style="display: none;">
+            <label>Select Online Payment Method:</label>
+            <select id="payment-method-options" name="payment-method-options">
+                <option value="UPI">UPI</option>
+                <option value="PhonePe">PhonePe</option>
+                <option value="GPay">Google Pay (GPay)</option>
+                <option value="Paytm">Paytm</option>
+            </select><br><br>
+        </div>
+        <div>
+            <label for="event-address">Event Address:</label>
+            <textarea id="event-address" name="event-address" rows="4" cols="50" required></textarea><br><br>
+        </div>
+        
+        <button type="submit">Submit</button>
+    </form>

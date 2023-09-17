@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Party Details</title>
+</head>
+<body>
+    <h1>Birthday Party Details</h1>
+    <form id="birthday-party-form" method="get" action="Thanks.html">
+        <!-- Guardian Information -->
+        <h2>Guardian Information</h2>
+        <label for="guardian-name">Guardian's Name:</label>
+        <input type="text" id="guardian-name" name="guardian-name" required><br><br>
+
+        <!-- Birthday Person Information -->
+        <h2>Birthday Person Information</h2>
+        <label for="birthday-person-name">Birthday Person's Name:</label>
+        <input type="text" id="birthday-person-name" name="birthday-person-name" required><br><br>
+
+        <label for="birthday-person-age">Age:</label>
+        <input type="number" id="birthday-person-age" name="birthday-person-age" required><br><br>
+
+        <!-- Cake Selection -->
+        <h2>Cake Selection</h2>
+        <label for="cake-flavor">Cake Flavor:</label>
+        <select id="cake-flavor" name="cake-flavor">
+            <option value="Red Velvet Cake">Red Velvet Cake</option>
+            <option value="White Cake & Vanilla">White Cake & Vanilla</option>
+            <option value="Strawberry & Angel Food Cake">Strawberry & Angel Food Cake</option>
+            <option value="Chocolate Cake">Chocolate Cake</option>
+            <option value="Carrot Cake">Carrot Cake</option>
+            <option value="Rainbow Cake">Rainbow Cake</option>
+            <option value="Funfetti Cake">Funfetti Cake</option>
+            <option value="Lemon Cake">Lemon Cake</option>
+        </select><br><br>
+
+        <!-- Photo Upload -->
+        <h2>Photo Upload</h2>
+        <label for="photo-option">Choose Photo (Yes/No):</label>
+        <input type="radio" id="photo-yes" name="photo-option" value="Yes">
+        <label for="photo-yes">Yes</label>
+        <input type="radio" id="photo-no" name="photo-option" value="No">
+        <label for="photo-no">No</label><br><br>
+
+        <label for="photo-upload">Upload Photo:</label>
+        <input type="file" id="photo-upload" name="photo-upload" accept="image/*"><br><br>
+
+        <!-- Decoration Type -->
+        <h2>Decoration Type</h2>
+        <label for="decoration-type">Decoration Type:</label>
+        <select id="decoration-type" name="decoration-type">
+            <option value="Traditional">Traditional</option>
+            <option value="Western">Western</option>
+        </select><br><br>
+
+        <!-- Food Preference -->
+        <h2>Food Preference</h2>
+        <label for="food-preference">Food Preference:</label>
+        <select id="food-preference" name="food-preference">
+            <option value="Veg">Veg</option>
+            <option value="Non-Veg">Non-Veg</option>
+            <option value="Both">Both</option>
+        </select><br><br>
+
+        <!-- Date and Timing -->
+        <h2>Date and Timing</h2>
+        <label for="event-date">Event Date:</label>
+        <input type="date" id="event-date" name="event-date" required><br><br>
+
+        <label for="event-timing">Event Timing:</label>
+        <input type="time" id="event-timing" name="event-timing" required><br><br>
+
+        <!-- Pricing and Payment -->
+        <h2>Pricing and Payment</h2>
+        <label>Price Category:</label>
+        <input type="radio" id="low-price" name="price-category" value="Low" required>
+        <label for="low-price">Low</label>
+
+        <input type="radio" id="average-price" name="price-category" value="Average" required>
+        <label for="average-price">Average</label>
+
+        <input type="radio" id="high-price" name="price-category" value="High" required>
+        <label for="high-price">High</label><br><br>
+
+        <label>Payment Method:</label>
+        <input type="radio" id="cash-payment" name="payment-method" value="Cash" required>
+        <label for="cash-payment">Cash On Delivery</label>
+
+        <input type="radio" id="online-payment" name="payment-method" value="Online" required>
+        <label for="online-payment">Online Payment</label><br><br>
+
+        <div id="online-payment-options" style="display: none;">
+            <label>Select Online Payment Method:</label>
+            <select id="payment-method-options" name="payment-method-options">
+                <option value="UPI">UPI</option>
+                <option value="PhonePe">PhonePe</option>
+                <option value="GPay">Google Pay (GPay)</option>
+                <option value="Paytm">Paytm</option>
+            </select><br><br>
+        </div>
+
+        <!-- Address -->
+        <h2>Address</h2>
+        <label for="event-address">Event Address:</label>
+        <textarea id="event-address" name="event-address" rows="4" cols="50" required></textarea><br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
