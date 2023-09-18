@@ -8,38 +8,49 @@
 <body>
     <center>
         <form method="get" action="details.html">
+            
             <div>
                 <h1 align="center">S.R EVENTS</h1>
-                <h5 align="center">please fill your details</h5>
+                <h5 align="center">Please fill in your details</h5>
             </div>
             <div>
-                <input type="text" id="UserName" maxlength="25" placeholder="UserName1(required)" required>
-            </div>
-            <br>
-            <div>
-                <input type="text" id="UserName" maxlength="25" placeholder="UserName2(optional)" >
+                <label for="firstName">First Name :</label>
+                <input type="text" id="firstName" maxlength="25" required>
             </div>
             <br>
             <div>
-                <input type="password" for="pwd1" required min="8" placeholder="password" reuired>
+                <label for="lastName">Last Name :</label>
+                <input type="text" id="lastName" maxlength="25">
             </div>
             <br>
             <div>
-                <input type="password" id="pwd1" required min="8" placeholder="Re-type password" required>
+                <label for="password">Password    :</label>
+                <input type="password" id="password" required minlength="8">
             </div>
             <br>
             <div>
-                <input type="Number" placeholder="Mobile Number" required>
+                <label for="confirmPassword">Re-type Password:</label>
+                <input type="password" id="confirmPassword" required minlength="8">
             </div>
             <br>
             <div>
-                <input type="email" placeholder="Enail id" required>
+                <label for="mobileNumber">Mobile Number:</label>
+                <input type="tel" id="mobileNumber" required>
             </div>
             <br>
-            <div><button type="signup " >signup</button></div>
-            
+            <div>
+                <label for="email">Email     :</label>
+                <input type="email" id="email" required>
+            </div>
             <br>
-            <div> <button type="reset"> reset</button></div> 
+            <div>
+                <button type="submit">Sign Up</button>
+            </div>
+            <br>
+            <div>
+                <button type="reset">Reset</button>
+            </div>
+                
         </form>
     </center>
 </body>
